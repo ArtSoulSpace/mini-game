@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Мини-игры</h1>
-    <div>
-        <h2>Времена года</h2>
-        <button onclick="seasons();">Узнать какое время года</button>
-    </div>
-
-    <div>
-        <h2>Запомни слова</h2>
-        <button onclick="memoryTheWords();">Играть</button>
-    </div>
-
-    <div>
-        <h2>Отгадай загадку</h2>
-        <button onclick="gamePuzzle()">Играть</button>
-    </div>
-
-    <div>
-        <h2>Угадай число, которое загадал компьтер</h2>
-        <button onclick="guessTheNum()">Играть</button>
-    </div>
-    
-
-    <script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header center">
+      <h1 class="header__title">
+        Добро пожаловать<br />
+        на мой сайт!
+      </h1>
+      <p class="header__subtitle">
+        Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+        <b>поехали</b> и <b>приступай</b>
+      </p>
+      <button class="header__btn">Поехали!</button>
+    </section>
+    <section class="menu center">
+      <div class="menu__item">
+        <img src="img/game1.png" alt="" />
+        <p class="menu__text">Игра 1</p>
+      </div>
+      <div class="menu__item">
+        <img src="img/game2.png" alt="" />
+        <p class="menu__text">Игра 2</p>
+      </div>
+      <div class="menu__item">
+        <img src="img/game3.png" alt="" />
+        <p class="menu__text">Игра 3</p>
+      </div>
+    </section>
+  </body>
 </html>

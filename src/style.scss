@@ -16,8 +16,8 @@ button {
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s;
-  &:hover{
-    background-color: #EB443F;
+  &:hover {
+    background-color: #eb443f;
   }
 }
 
@@ -53,7 +53,7 @@ button {
   background-color: #000915;
   display: flex;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 64px;
   gap: 32px;
   &__item {
     position: relative;
@@ -74,6 +74,35 @@ button {
     font-size: 24px;
     line-height: 32px;
   }
+}
+
+.game-seasons {
+  background-color: #000915;
+  &__box {
+    padding-top: 164px;
+    padding-bottom: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left{
+    max-width: 534px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+.game__title {
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+}
+
+.game__description {
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
 }
 
 @import "mobile";

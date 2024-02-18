@@ -29,4 +29,32 @@
       width: 343px;
     }
   }
+
+  .game-seasons {
+    &__box {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 343px;
+    }
+    &__img {
+      width: 344px;
+      height: 236px;
+    }
+  }
+
+  .game__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .game__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }

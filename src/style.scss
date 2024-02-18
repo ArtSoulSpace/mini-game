@@ -7,6 +7,20 @@ body {
   font-family: Montserrat;
 }
 
+button {
+  height: 48px;
+  width: 234px;
+  background-color: #9c0332;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover{
+    background-color: #EB443F;
+  }
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -33,16 +47,6 @@ body {
     max-width: 481px;
     padding-bottom: 34px;
   }
-
-  &__btn {
-    height: 48px;
-    width: 234px;
-    background-color: #9c0332;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-  }
 }
 
 .menu {
@@ -51,10 +55,25 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   gap: 32px;
-  &____text{
-    color: #FFFFFF;
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #08c2cf;
+      border-radius: 16px;
+    }
+  }
+  &__text {
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+    color: #ffffff;
     font-size: 24px;
     line-height: 32px;
   }
-
 }
+
+@import "mobile";

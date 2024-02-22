@@ -46,6 +46,8 @@ button {
     color: #fff;
     max-width: 481px;
     padding-bottom: 34px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -111,6 +113,24 @@ button {
   }
 }
 
+.game-riddels {
+  background-image: url(img/bgi2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 164px;
+    padding-bottom: 164px;
+    gap: 18px;
+  }
+  &__description{
+    text-align: center;
+  }
+}
+
 .game__title {
   font-size: 48px;
   line-height: 58px;
@@ -121,6 +141,19 @@ button {
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
+}
+
+.footer {
+  background-color: #000915;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  &__text {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 @import "mobile";

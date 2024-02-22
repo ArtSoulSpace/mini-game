@@ -46,6 +46,8 @@ button:hover {
   color: #fff;
   max-width: 481px;
   padding-bottom: 34px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
@@ -110,6 +112,24 @@ button:hover {
   gap: 18px;
 }
 
+.game-riddels {
+  background-image: url(img/bgi2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.game-riddels__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 164px;
+  padding-bottom: 164px;
+  gap: 18px;
+}
+.game-riddels__description {
+  text-align: center;
+}
+
 .game__title {
   font-size: 48px;
   line-height: 58px;
@@ -120,6 +140,19 @@ button:hover {
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
+}
+
+.footer {
+  background-color: #000915;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+.footer__text {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 @media (max-width: 767px) {
@@ -137,11 +170,13 @@ button:hover {
     font-size: 24px;
     line-height: 39px;
     width: 343px;
+    text-align: center;
   }
   .header__subtitle {
     font-size: 14px;
     line-height: 22px;
     width: 343px;
+    text-align: center;
   }
   .menu {
     display: flex;
@@ -182,6 +217,12 @@ button:hover {
     width: 344px;
     height: 236px;
   }
+  .game-riddels__box {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
   .game__title {
     font-size: 32px;
     line-height: 39px;
@@ -189,5 +230,6 @@ button:hover {
   .game__description {
     font-size: 14px;
     line-height: 22px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

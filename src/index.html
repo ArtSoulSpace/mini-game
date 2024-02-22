@@ -18,10 +18,12 @@
         Добро пожаловать <br />
         на мой сайт!
       </h1>
-      <p class="header__subtitle">
-        Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
-        <b>поехали</b> и <b>приступай</b>
-      </p>
+      <div class="header__subtitle">
+        <p class="">
+          Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+          <b>поехали</b> и <b>приступай</b>
+        </p>
+      </div>
       <button class="header__btn">Поехали!</button>
     </section>
     <section class="menu center">
@@ -29,7 +31,7 @@
         <img class="menu__img" src="img/game1.png" alt="" />
         <p class="menu__text">Игра 1</p>
       </div>
-      <div class="menu__item">
+      <div class="menu__item" onclick="guessTheNum()">
         <img class="menu__img" src="img/game2.png" alt="" />
         <p class="menu__text">Игра 2</p>
       </div>
@@ -56,9 +58,10 @@
     <section class="game-memory center">
       <div class="game-memory__box">
         <div class="game-memory__left">
-          <h2 class="game__title">Запомни слова </h2>
+          <h2 class="game__title">Запомни слова</h2>
           <p class="game__description">
-            При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.
+            При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+            необходимо запомнить.
           </p>
           <button onclick="memoryTheWords()">Играть!</button>
         </div>
@@ -67,6 +70,20 @@
         </div>
       </div>
     </section>
+    <section class="game-riddels center">
+      <div class="game-riddels__box">
+        <h2 class="game__title">Игра в загадки</h2>
+        <p class="game__description game-riddels__description">
+          Компьютер загадывает загадку, вам необходимо ее угадать, если вы
+          дадите не правильный ответ, то компьютер даст вам подсказку. У вас
+          будет три попытки и две подсказки.
+        </p>
+        <button onclick="gamePuzzle()">Играть!</button>
+      </div>
+    </section>
+    <footer class="footer center">
+      <p class="footer__text">Все права защищены</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

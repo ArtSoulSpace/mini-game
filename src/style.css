@@ -92,6 +92,24 @@ button:hover {
   gap: 18px;
 }
 
+.game-memory {
+  background-color: #000915;
+}
+.game-memory__box {
+  padding-top: 164px;
+  padding-bottom: 144px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.game-memory__left {
+  max-width: 534px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 .game__title {
   font-size: 48px;
   line-height: 58px;
@@ -135,6 +153,8 @@ button:hover {
   .game-seasons__box {
     flex-direction: column;
     gap: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
   .game-seasons__left {
     display: flex;
@@ -143,6 +163,22 @@ button:hover {
     width: 343px;
   }
   .game-seasons__img {
+    width: 344px;
+    height: 236px;
+  }
+  .game-memory__box {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .game-memory__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 343px;
+  }
+  .game-memory__img {
     width: 344px;
     height: 236px;
   }

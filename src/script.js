@@ -5,19 +5,19 @@ function seasons() {
 
   if (month === 12 || month === 1 || month === 2) {
     console.log("Зима");
-    alert("Зима")
+    alert("Зима");
   } else if (month === 3 || month === 4 || month === 5) {
     console.log("Весна");
-    alert("Весна")
+    alert("Весна");
   } else if (month === 6 || month === 7 || month === 8) {
     console.log("Лето");
-    alert("Лето")
+    alert("Лето");
   } else if (month === 9 || month === 10 || month === 11) {
     console.log("Осень");
-    alert("Осень")
+    alert("Осень");
   } else {
     console.log("Error");
-    alert("Error")
+    alert("Error");
   }
 }
 
@@ -38,9 +38,11 @@ function memoryTheWords() {
   let answerOne = String(prompt("Чему равнялся первый элемент массива?"));
   let answerTwo = String(prompt("Чему равнялся последний элемент массива?"));
 
-  if (answerOne == fruits[0] && answerTwo == fruits[6]) {
+  let lowerCaseFruits = fruits.map(fruits => fruits.toLowerCase());
+
+  if (answerOne == lowerCaseFruits[0] && answerTwo == lowerCaseFruits[6]) {
     alert("Молодец!");
-  } else if (answerOne == fruits[0] || answerTwo == fruits[6]) {
+  } else if (answerOne == lowerCaseFruits[0] || answerTwo == lowerCaseFruits[6]) {
     alert("Хорошо! Почти угадал");
   } else {
     alert("Потренируй память");

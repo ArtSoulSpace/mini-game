@@ -85,7 +85,25 @@ button {
     align-items: center;
     justify-content: space-between;
   }
-  &__left{
+  &__left {
+    max-width: 534px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+.game-memory {
+  background-color: #000915;
+  &__box {
+    padding-top: 164px;
+    padding-bottom: 144px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
     max-width: 534px;
     display: flex;
     flex-direction: column;

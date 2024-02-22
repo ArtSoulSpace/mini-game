@@ -34,8 +34,29 @@
     &__box {
       flex-direction: column;
       gap: 32px;
+      padding-top: 64px;
+      padding-bottom: 64px;
     }
 
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 343px;
+    }
+    &__img {
+      width: 344px;
+      height: 236px;
+    }
+  }
+
+  .game-memory{
+    &__box {
+      flex-direction: column;
+      gap: 32px;
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
     &__left {
       display: flex;
       flex-direction: column;
